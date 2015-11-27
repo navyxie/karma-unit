@@ -1,0 +1,29 @@
+{
+  "name": "karma-unit",
+  "description": "karma unit test",
+  "version": "0.0.0",
+  "keywords": [
+    "karma",
+    "unit",
+    "test",
+    "angular"
+  ],
+  "homepage": "https://github.com/navyxie/karma-unit",
+  "author": "navyxie",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/navyxie/karma-unit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/navyxie/karma-unit/issues"
+  },
+  "devDependencies": {
+    "karma": "^0.13.14",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.6",
+    "http-server":"^0.8.5"  
+  }
+}
