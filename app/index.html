@@ -2,15 +2,17 @@
 <html lang="en" ng-app="karma-unit">
 <head>
   <meta charset="utf-8">
-  <title>Google Phone Gallery</title>
-  <link rel="stylesheet" href="libs/bootstrap.min.css">
+  <title>index</title>
+  <link rel="stylesheet" href="libs/bootstrap.css">
+  <script src="libs/jquery-2.1.4.min.js"></script>
+  <script src="libs/bootstrap.min.js"></script>
   <script src="libs/angular.min.js"></script>
   <script src="src/app.js"></script>
 </head>
 <body>
   <div ng-controller="appCtrl">
     <div>
-      <input ng-model="name",placeholder="enter your name." />
+      <input ng-model="name" placeholder="enter your name." />
       <span ng-bind="name"></span>
     </div>
   </div>
