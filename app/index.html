@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="karma-unit">
+<html lang="en" ng-app="mainApp">
 <head>
   <meta charset="utf-8">
   <title>index</title>
@@ -9,6 +9,8 @@
   <script src="libs/angular.min.js"></script>
   <script src="libs/angular-resource.min.js"></script>
   <script src="libs/angular-route.min.js"></script>
+  <script src="src/service.js"></script>
+  <script src="src/controller.js"></script>
   <script src="src/app.js"></script>
   <style type="text/css">
     *{
@@ -21,19 +23,6 @@
   </style>
 </head>
 <body>
-  <div ng-controller="appCtrl">
-    <div class="title">
-      <input ng-model="name" placeholder="test ng-model." />
-      <span ng-bind="name"></span>
-    </div>
-    <div class="list">
-      <ul>
-        <li ng-repeat="list in lists.list | filter : name" class="itemList">
-          <div><a href="#/list/{{list.id}}" ng-bind="list.title"></a></div>
-          <div><span ng-bind="list.content"></span></div>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <div ng-view></div>
 </body>
 </html>
