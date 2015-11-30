@@ -10,11 +10,12 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
     // list of files / patterns to load in the browser
     files: [
+        'app/libs/jquery-2.1.4.min.js',
         'app/libs/angular.min.js',
-        'app/libs/angular-route.js',
+        'app/libs/angular-route.min.js',
         'app/libs/angular-resource.min.js',
         'app/libs/angular-mocks.js',
-        'app/src/app.js',
+        'app/src/*.js',
         'test/*.js',
     ],
     // list of files to exclude
