@@ -6,7 +6,10 @@
     "karma",
     "unit",
     "test",
-    "angular"
+    "angular",
+    "jquery",
+    "dom",
+    "event"
   ],
   "homepage": "https://github.com/navyxie/karma-unit",
   "author": "navyxie",
