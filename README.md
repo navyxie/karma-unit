@@ -27,3 +27,10 @@ karma start karma.conf.js
 2 open browser , locate to 127.0.0.1:8080/page/login
 
 3 enter name : karma , password:test.
+
+### how to test jquery with jasmine in karma ?
+
+- Your js source code must be can be access in window, why?(karma will execute the sciprt before the fixture load in browser, so such as dom bind event will not fire.)
+
+- example:app/src/login.js
+
