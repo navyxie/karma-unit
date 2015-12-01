@@ -2,6 +2,7 @@ describe('login page ,not angular page',function(){
 	beforeEach(function () {
 		jasmine.getFixtures().fixturesPath = 'base/app/fixture/';
 		jasmine.getFixtures().load('login.html');
+		LOGINPAGE.init();
 	});
 	describe('test dom',function(){	
 		beforeEach(function () {			
@@ -19,12 +20,13 @@ describe('login page ,not angular page',function(){
 			jasmine.Ajax.install();
 		});
 		it('input username and password',function(){
+			var spyEvent = spyOnEvent('#username', 'keyup');
 			$('#username').val('karma');
 			$('#username').trigger('keyup');
 			$('#password').val('test');
 			$('#password').trigger('keyup');
-			expect($('#username').val()+$('#password').val()).toBe('karmatest');
-			// expect($('#loginBtn')).toHaveClass('btn-success');
+			expect(spyEvent).toHaveBeenTriggered();
+			expect($('#loginBtn')).toHaveClass('btn-success');
 		});
 		it('do login', function () {
 			var result,request;
