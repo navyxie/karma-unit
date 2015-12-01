@@ -10,6 +10,16 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
     // list of files / patterns to load in the browser
     files: [
+        {
+            pattern:'app/fixture/*.html',
+            served:true,
+            included:false
+        },
+        {
+            pattern:'app/data/*.json',
+            served:true,
+            included:false
+        },
         'app/libs/jquery-2.1.4.min.js',
         'app/libs/jasmine-jquery.js',
         'app/libs/jasmine-ajax.js',
