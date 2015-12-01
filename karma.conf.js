@@ -15,11 +15,6 @@ module.exports = function(config) {
             served:true,
             included:false
         },
-        {
-            pattern:'app/data/*.json',
-            served:true,
-            included:false
-        },
         'app/libs/jquery-2.1.4.min.js',
         'app/libs/jasmine-jquery.js',
         'app/libs/jasmine-ajax.js',
@@ -32,6 +27,7 @@ module.exports = function(config) {
     ],
     // list of files to exclude
     exclude: [
+        // 'app/src/login.js'
         // 'common/angular/1.3.7/*.min.js',
         // 'weixin/*.min.js'
     ],
