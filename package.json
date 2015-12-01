@@ -21,10 +21,10 @@
     "url": "https://github.com/navyxie/karma-unit/issues"
   },
   "devDependencies": {
+    "http-server": "^0.8.5",
     "karma": "^0.13.14",
-    "karma-firefox-launcher": "^0.1.7",
     "karma-chrome-launcher": "^0.2.1",
-    "karma-jasmine": "^0.3.6",
-    "http-server":"^0.8.5"  
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.6"
   }
 }
