@@ -19,10 +19,12 @@ describe('login page ,not angular page',function(){
 			jasmine.Ajax.install();
 		});
 		it('input username and password',function(){
+			var spyEvent = spyOnEvent('#username', 'keyup');
 			$('#username').val('karma');
 			$('#username').trigger('keyup');
 			$('#password').val('test');
 			$('#password').trigger('keyup');
+			expect(spyEvent).toHaveBeenTriggered();
 			expect($('#username').val()+$('#password').val()).toBe('karmatest');
 			// expect($('#loginBtn')).toHaveClass('btn-success');
 		});
